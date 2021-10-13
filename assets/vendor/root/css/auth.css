@@ -1,0 +1,140 @@
+/*
+ * Dashforge Auth Pages (Signin, Signup, etc.)
+ *
+ * This style is use in auth pages.
+ *
+ */
+
+.content-auth {
+  min-height: calc(100vh - 106px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-auth > .container {
+  padding: 0;
+}
+
+@media (max-width: 1139px) {
+  .content-auth > .container {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+
+.content-auth > .container:first-child {
+  flex: 1;
+}
+
+.content-auth .media-body {
+  height: 100vh;
+}
+
+.content-auth .media-body img {
+  width: 100%;
+  height: 100vh;
+}
+
+.content-auth .form-body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.content-auth .form-body .icon-social {
+  position: relative;
+}
+
+.content-auth .form-body .icon-social img {
+  position: absolute;
+  left: 0.8rem;
+  z-index: 1;
+  top: 0.6rem;
+}
+
+.content-auth .form-auth {
+  min-height: calc(100vh - 36px);
+}
+
+.content-auth .form-auth .group-phone {
+  position: relative;
+}
+
+.content-auth .form-auth .group-phone .input-select {
+  width: 5rem !important;
+  height: 0;
+  visibility: hidden;
+}
+
+.content-auth .form-auth .group-phone .select2 {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 5rem !important;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  border-right: 1px solid #ccc;
+  height: 37px;
+}
+
+.content-auth .form-auth .group-phone .select2 .select2-selection {
+  height: 37px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.content-auth .form-auth .group-phone .select2 .select2-selection img {
+  position: relative;
+  top: -1px;
+}
+
+.content-auth .form-auth .group-phone .select2 .select2-selection .select2-selection__arrow {
+  top: 5px;
+}
+
+.content-auth .form-auth .group-phone input {
+  padding-left: 5.5rem;
+}
+
+.content-auth-alt {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-auth-alt .container {
+  padding: 0;
+}
+
+@media (max-width: 1139px) {
+  .content-auth-alt .container {
+    max-width: none;
+  }
+}
+
+.sign-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+@media (min-width: 1200px) {
+  .sign-wrapper {
+    max-width: 400px;
+  }
+}
+
+.sign-wrapper .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.auth-select2 .select2-results .select2-results__options {
+  min-height: 205px;
+}
+

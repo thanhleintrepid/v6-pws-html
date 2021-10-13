@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="PowerSell">
+    <title>
+        All Inventory
+    </title>
+    <meta name="description" content="PowerSell is a multi-channel growth solution for online sellers to grow online sales on Lazada, Shopee &amp; Facebook by 25%+ while saving over 2 hours a day." />
+    <meta name="robots" content="index, follow, noarchive" />
+    <meta name="googlebot" content="index, follow, noarchive, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, noarchive, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://powersell.com/en/homepage/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PowerSell - Leading growth solution for Ecommerce sellers" />
+    <meta property="og:description" content="PowerSell is the simplest management solution for sellers on Lazada, Shopee, Sendo,etc. to grow and scale their business efficiently!" />
+    <meta property="og:url" content="https://app.powersell.com" />
+    <meta property="og:site_name" content="PowerSell" />
+    <meta property="article:publisher" content="https://www.facebook.com/powersell.vn/" />
+    <meta property="og:image" content="https://pws-prod-fe-images.s3-ap-southeast-1.amazonaws.com/upload/2020-05-25%2015.34.41.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="_token" content="c65wDoTyp8EBeVB8eIyzwxTfE0DDxJosxzVhwY81">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/vendor/root/images/logo-fill-blue.png">
+    <title>PowerSellApp</title>
+
+    <!-- vendor css -->
+    <link href="../assets/vendor/root/lib/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="../assets/vendor/root/ui/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../assets/vendor/root/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" type="text/css" />
+
+    <!-- DashForge CSS -->
+    <link rel="stylesheet" href="../assets/vendor/root/ui/assets/css/dashforge.dashboard.css">
+
+    <link rel="stylesheet" href="../assets/css/app.css?v=0.0.0.1">
+
+    <link href="../assets/vendor/root/ui/lib/jquery-ui-slider/jquery-ui.min.css" rel="stylesheet">
+    <link href="../assets/vendor/root/ui/lib/jquery-ui-slider/jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="../assets/vendor/root/ui/lib/jquery-ui-slider/jquery-ui.theme.min.css" rel="stylesheet">
+    <link href="../assets/vendor/root/ui/lib/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../assets/vendor/root/ui/lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendor/root/css/root.css?v=0.0.0.1">
+
+    <link rel="stylesheet" href="../assets/css/style-general.css">
+    <link rel="stylesheet" href="../assets/css/inventory.css">
+
+    <script src="../assets/vendor/root/ui/lib/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/chart.js/Chart.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="../assets/vendor/root/ui/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/feather-icons/feather.min.js"></script> <!-- icon -->
+    <script src="../assets/vendor/root/lib/sweetalert2/dist/sweetalert2.min.js" type="text/javascript"></script>
+
+    <!-- append theme customizer -->
+    <!-- Cookie -->
+
+    <script src="../assets/vendor/root/ui/assets/js/dashforge.js"></script>
+    <script src="../assets/vendor/root/ui/assets/js/dashforge.aside.js"></script>
+    <script src="../assets/vendor/root/js/root.js?v=0.0.0.1"></script>
+    <script src="../assets/vendor/root/ui/lib/parsleyjs/parsley.min.js"></script>
+    <script src="../assets/vendor/root/ui/dashforge.settings.js"></script>
+    <script src="../assets/vendor/root/lib/bootstrap_toggle/js/bootstrap-toggle.min.js"></script>
+    <script src="../assets/vendor/root/lib/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="../assets/vendor/root/lib/jquery.lazy/jquery.lazy.min.js"></script>
+    <script src="../assets/vendor/root/lib/numeral.min.js"></script>
+    <script src="../assets/vendor/root/js/socket.io.js"></script>
+    <script src="../assets/vendor/root/ui/lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/chart.js/Chart.bundle.min.js"></script>
+
+    <script src="../assets/js/ramda.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/vendor/root/ui/lib/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="../assets/vendor/root/ui/lib/jquery-ui-slider/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <!-- sidebar -->
+    <aside class="aside aside-fixed">
+        <div class="aside-header">
+            <a href="/" class="aside-logo">
+                <img src="../assets/vendor/root/images/logos/pws_full.svg" alt="PowerSell"
+                    width="125">
+            </a>
+            <a href="" class="aside-menu-link">
+                <i data-feather="menu"></i>
+                <i data-feather="x"></i>
+            </a>
+        </div>
+        <div class="aside-body pd-x-0">
+            <div class="pd-x-15" style="min-height:calc(100% - 40px)">
+
+                <ul class="nav nav-aside">
+                    <li class="nav-item">
+                        <a href="../views/dashboard.html" class="nav-link">
+                            <i data-feather="airplay"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Dashboard
+                                    </span>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item show">
+                        <a href="#" class="nav-link">
+                            <i data-feather="shopping-bag"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Products
+                                    </span>
+                            </div>
+                        </a>
+                        <nav class="nav-sub-item">
+                            <a href="../views/listing-listed.html">All Products Listed</a>
+                            <a href="../views/listing-new-product.html">New Product Listing</a>
+                            <a href="../views/listing-product-catalog.html">Product Catalog</a>
+                        </nav>
+                    </li>
+    
+                    <li class="nav-item active show">
+                        <a href="#" class="nav-link">
+                            <i data-feather="package"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Inventory
+                                    </span>
+                            </div>
+                        </a>
+                        <nav class="nav-sub-item">
+                            <a class="active" href="../views/inventory-all.html">Inventory SKU</a>
+                            <a href="#">Virtual SKU</a>
+                            <a href="#">Purchase Order</a>
+                            <a href="#">Stock Count</a>
+                            <a href="#">Stock Transfer</a>
+                        </nav>
+                    </li>
+    
+                    <li class="nav-item show">
+                        <a href="#" class="nav-link">
+                            <i data-feather="clipboard"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Orders
+                                    </span>
+                                <span class="total-pending-orders tx-12" style=""></span>
+                            </div>
+                        </a>
+                        <nav class="nav-sub-item">
+                            <a href="../views/order-all-new.html">All Orders</a>
+                            <a href="../views/order-processing.html">Marketplace order processing</a>
+                            <a href="#">Offline order processing</a>
+                            <a href="#">Return reconciliation</a>
+                            <a href="#">Payment reconciliation</a>
+                        </nav>
+                    </li>
+    
+                    <li class="nav-item show">
+                        <a href="http://localhost:9090/app/message" class="nav-link">
+                            <i data-feather="message-square"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Chat Automation
+                                    </span>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item show">
+                        <a href="http://localhost:9090/report/revenue" class="nav-link">
+                            <i data-feather="bar-chart"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Promotion
+                                    </span>
+                            </div>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item show">
+                        <a href="http://localhost:9090/report/revenue" class="nav-link">
+                            <i data-feather="bar-chart"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Analytics Portal
+                                    </span>
+                            </div>
+                        </a>
+                    </li>
+    
+    
+                    <li class="nav-item show">
+                        <a href="/utility/powerchat" class="nav-link">
+                            <i data-feather="grid"></i>
+                            <div class="parent-menu-apps w-100 pd-x-5 d-flex justify-content-between">
+                                    <span class="" style="">
+                                        Applications
+                                    </span>
+                            </div>
+                        </a>
+                        <nav class="nav-sub-item">
+                            <a href="#">PowerSell Pro</a>
+                            <a href="#">PowerPaint</a>
+                        </nav>
+                    </li>
+    
+                </ul>
+    
+            </div>
+            <div>
+                <section
+                        class="footer-language bg-white bd-b text-capitalize d-flex justify-content-between position-absolute wd-100p">
+                    <div class="dropup box-drop">
+                            <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/images/languages/en.svg" class="mr-2" width="24" alt="en">
+                                English
+                            </span>
+                        <a class="helpcenter d-none" target="_blank" href="#">
+                            <i class="fal fa-question-circle"></i>&nbsp;Help Center
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" data-value="en" href="/language/en">
+                                English
+                            </a>
+                            <a class="dropdown-item" data-value="id" href="/language/id">
+                                Bahasa Indonesia
+                            </a>
+                            <a class="dropdown-item" data-value="th" href="/language/th">
+                                Thai
+                            </a>
+                            <a class="dropdown-item" data-value="vi" href="/language/vi">
+                                Tiếng Việt
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="javascript:void(0)"><span onclick="showWidgetInterCorm()" data-toggle="tooltip"
+                                                        data-placement="top" title="Chat with us"><img
+                                src="../assets/vendor/root/images/icons/chat.svg"
+                                alt=""></span></a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </aside>     
+
+    <!-- content -->
+    <div class="content pd-0">
+        <!-- Header -->
+        <div class="content-header" style="height: 48px;">
+        <div class="pws-title-page">
+            Title Page
+        </div>
+            <nav class="nav align-items-center">
+                <li id="quota_resources" class="nav-item pd-r-25 d-none d-sm-block" style="white-space:nowrap;">
+                    <div class="btn btn-xs btn-danger h33px">
+                        <i class="far fa-arrow-circle-up tx-16"></i>
+                        <span class="tx-medium pd-l-5">UPGRADE</span>
+                    </div>
+                    <div class="dropdown-menu tx-14 pd-20 tx-medium _t-16 dropdown-menu-mobile-customize"
+                        onclick="stopPropagationMenu(event)">
+                        <div class="resources-group mw-350-responive text-center" style="min-width: 350px">
+                            <div id="resources-spinner" class="spinner-border text-primary" display="none"
+                                role="status">
+                                <span class="sr-only">...</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item pd-r-25" style="white-space:nowrap;">
+                    <a class="nav-link d-flex" href="#" data-toggle="dropdown"><i data-feather="plus-circle"></i><span
+                            class="tx-medium pd-l-5 mobile-hide"></span></a>
+                    <div class="dropdown-menu tx-14 pd-b-15 tx-medium _t-16">
+                        <a class="dropdown-item mg-y-5" href="/sales-channel/create">
+                            <img class="bg-primary rounded pd-5 mg-r-5"
+                                src="../assets/vendor/root/images/header/shop.svg" alt="">
+                            <span class=" tx-primary">Sales channel</span>
+                        </a>
+                        <a class="dropdown-item tx-primary  mg-y-5" href="/app/listing/catalog/create">
+                            <img class="bg-primary rounded pd-5 mg-r-5"
+                                src="../assets/vendor/root/images/header/catalog.svg" alt="">
+                            <span class=" tx-primary">Product Catalog</span>
+                        </a>
+                        <a class="dropdown-item tx-primary  mg-y-5" href="/app/inventory/create">
+                            <img class="bg-primary rounded pd-5 mg-r-5"
+                                src="../assets/vendor/root/images/header/inventory.svg"
+                                alt="">
+                            <span class=" tx-primary">Stock item</span>
+                        </a>
+                        <a class="dropdown-item tx-primary mg-y-5" href="/account/staff/create">
+                            <img class="bg-primary rounded pd-5 mg-r-5"
+                                src="../assets/vendor/root/images/header/account.svg" alt="">
+                            <span class=" tx-primary">Staff account</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item pd-r-25" style="white-space:nowrap;">
+                    <a class="nav-link d-flex" href="#" id="notiBadge" class="mr-2" data-toggle="dropdown"
+                    title="Notifications">
+                        <i id="notification-bell" class="notification" data-feather="bell"></i><span
+                            class="tx-medium pd-l-5 mobile-hide"></span>
+                    </a>
+                        <span id="badge" class="badge"
+                            style="position: absolute; top: 10px; font-size: 8px; margin-left: 10px">
+                        </span>
+                    <div class="dropdown-menu tx-14 pd-20 tx-medium _t-16 dropdown-menu-mobile-customize"
+                        onclick="stopPropagationMenu(event)">
+                        <div class="notification-group text-center" style="min-width:320px">
+                            <div id="notification-spinner" class="spinner-border text-primary" display="none"
+                                role="status">
+                                <span class="sr-only">...</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item pd-r-5" style="white-space:nowrap;">
+                    <a class="nav-link d-flex" href="../views/setting-overview.html" class="mr-2" data-toggle="tooltip"
+                    title="Manage all of your settings">
+                        <i data-feather="settings"></i><span class="tx-medium pd-l-5 mobile-hide"></span>
+                    </a>
+                </li>
+                <li class="nav-item" style="white-space:nowrap;">
+                    <a class="nav-link d-flex align-items-center" href="#" data-toggle="dropdown">
+                        <i class="fal fa-horizontal-rule" style="transform: rotate(90deg);"></i>
+                        <span class="tx-medium pd-l-5">Johnny Bui</span>
+                        <i class="far fa-angle-down mg-l-5"></i>
+                    </a>
+                    <div class="dropdown-menu tx-14 tx-medium _t-16">
+                        <!--show Upgrade tren mobile-->
+                        <a href="#modalUpgrade" class="dropdown-item d-block d-sm-none" data-toggle="modal"
+                        data-target="#modalAboutPWS">
+                            <div class="btn btn-xs btn-danger h33px">
+                                <i class="far fa-arrow-circle-up tx-16"></i>
+                                <span class="tx-medium pd-l-5">UPGRADE</span>
+                            </div>
+                        </a>
+                        <a href="https://powersell.com/faq/" class="dropdown-item" target="_blank">
+                                <span class="d-flex">
+                                    Quản lý tài khoản
+                                </span>
+                        </a>
+                        <a href="https://www.facebook.com/powersell.vn/" class="dropdown-item" target="_blank">
+                            Hỗ trợ
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="https://powersell.com/terms-conditions/" class="dropdown-item" target="_blank">Đăng
+                            xuất</a>
+                    </div>
+                </li>
+
+            </nav>
+        </div>
+
+
+        <!-- Content -->
+        <div class="content-body">
+            <div class="container pd-x-0">
+                <!-- breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mg-b-0">
+                        <li class="breadcrumb-item">
+                            <a href="inventory-all.html">
+                                <i data-feather="arrow-left" class="tx-primary"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item _bc-parent">Inventory</li>
+                        <li class="breadcrumb-item _bc-parent">All Inventory</li>
+                        <li class="breadcrumb-item _bc-item" aria-current="page">Dầu gội cho tóc xơ
+                            <a class="pointer-event" data-toggle="collapse" href="#info" role="button"
+                               aria-expanded="false">
+                                <i class="fal fa-info-circle tx-primary mg-l-5"></i>
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="collapse show mg-t-5" id="info">
+                    <div class="card card-body info-bg">
+                        <button class="btn position-absolute r-0 t-0" type="button" data-toggle="collapse"
+                                data-target="#info" aria-expanded="false">
+                            <i class="fal fa-times"></i>
+                        </button>
+                        <h5>Drive growth with targeted messages that increase sales, tours to onboard new users, and
+                            more.</h5>
+                        <p>Instantly resolve 33% of your customers’ most common questions with precise automated
+                            answers.</p>
+                        <div class="d-flex flex-wrap flex-sm-nowrap">
+                            <a href="#">
+                            <span>
+                                <i class="fal fa-book"></i>
+                                How to get started
+                            </span>
+                            </a>
+                            <a href="#">
+                            <span>
+                                <i class="fal fa-play-circle"></i>
+                                Watch a video
+                            </span>
+                            </a>
+                            <a href="#">
+                            <span>
+                                <i class="fal fa-compass"></i>
+                                Take a tour
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--top info-->
+                <div class="card mg-t-20 pd-md-0 pd-xs-20" style="border-radius: 2px;">
+                    <div class="card-body">
+                        <div class="pd-x-15 row summary-divider justify-content-between">
+                            <div class="d-flex flex-row group-detail">
+
+                                <div>
+                                    <div style="width:65px; height:65px">
+                                        <img src="https://cf.shopee.vn/file/788384ae7d8b4cdbf74b1bf41bd017e2"
+                                             alt="Áo thun có cổ, classic, body ôm vừa vặn. dáng đẹp, form chuẩn"
+                                             width="65" height="65">
+                                    </div>
+                                </div>
+                                <div class="mg-l-10">
+                                    <div>
+                                        <div class="tx-12 tx-normal mg-b-10">
+                                            <span class="__sku-product-table d-flex align-items-center" data-toggle="tooltip" data-placement="top" title="" data-original-title="PWS-00003617">
+                                                        <img src="../assets/images/inventory.svg" alt="" width="15">
+                                                        <span>PWS-00003617</span>
+                                                        <button type="button" id="btn_copyShopSKUNumber" class="btn btn-sm btn-icon bd-0 pd-t-0 btn-copy js-tooltip js-copy copy-icon" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Copy to clipboard">
+                                                            <i class="fal fa-clone"></i>
+                                                        </button>
+                                                    </span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="tx-normal __sku-product-table">
+                                            <div class="">
+                                                <i class="fas fa-barcode-read tx-12"></i>
+                                                No barcode
+                                            </div>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="title-detail">Physical stock <i
+                                        class="fal fa-info-circle tx-primary" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="The amount of items you have in your warehouse"></i>
+                                </div>
+                                <div class="tx-primary">
+                                    <div class="dropdown stock-dropdown">
+                                        <div class="d-flex align-items-center" data-toggle="dropdown"
+                                             aria-haspopup="true" aria-expanded="false">
+                                                        <span class="tx-13 stock-ipnput action-edit">
+                                                            10
+                                                        </span>
+                                        </div>
+                                        <div class="dropdown-menu tx-12 dropdown-form bg-white">
+                                            <form class="pd-10 form-update update-stock"
+                                                  data-parsley-validate
+                                                  onsubmit="return updateStockProduct(event, this)">
+                                                <p class="tx-18 tx-nomarl">
+                                                    Update stock
+                                                </p>
+                                                <input type="hidden" name="id" value="244970">
+                                                <div class="form-group mg-b-5 row row-xs">
+                                                    <div class="col-sm-5 col-form-label">Main warehouse
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        <input
+                                                                class="form-control tx-12 mg-l-auto wd-xs-100p"
+                                                                name="stock" value="10" placeholder=""
+                                                                data-parsley-type="number" min="0"
+                                                                data-parsley-trigger="keyup"
+                                                                data-parsley-required
+                                                                data-parsley-physicalstock="0"
+                                                                data-parsley-physicalstock-message="Physical stock needs to be greater than the total stock of processing for orders and reserves"
+                                                                data-parsley-required-message="The stock must be at least 0."
+                                                                data-parsley-min-message="The stock must be at least 0."
+                                                                onkeyup="keyUpFmtNumber(this)">
+                                                        <small
+                                                                class="body-fmtnumber tx-12 mg-y-5 mg-x-10 tx-gray-700"></small>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="text-left tx-13">
+                                                    <p class="d-flex">
+                                                        <span class="tx-medium">Total Stock:</span>
+                                                                    <span class="mg-l-auto tx-normal">
+                                                                        10
+                                                                    </span>
+                                                    </p>
+                                                    <div id="stock_history_p_244970"></div>
+                                                                <span
+                                                                        class="text-primary d-block text-right mg-b-10 d-none"><i
+                                                                        class="fal fa-history"></i> <a
+                                                                        href="../assets/detail/244970/stock-history">Stock
+                                                                    history</a></span>
+                                                </div>
+                                                <div class="text-right">
+                                                    <button type="reset"
+                                                            class="btn btn-outline-dark btn-action"
+                                                            onclick="$(this).closest('.dropdown').find('div[data-toggle=dropdown]').dropdown('toggle')">Cancel</button>
+                                                    <button type="submit"
+                                                            class="btn btn-primary mg-l-10 btn-action">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="title-detail">Processing <i
+                                        class="fal fa-info-circle tx-primary" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="The amount of items you have in your warehouse"></i>
+                                </div>
+                                <span class="tx-normal tx-13">0</span>
+                            </div>
+                            <div>
+                                <div class="title-detail">Campaign Stock <i
+                                        class="fal fa-info-circle tx-primary" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="The amount of items you have in your warehouse"></i>
+                                </div>
+                                <span class="tx-normal tx-13">0</span>
+                            </div>
+                            <div>
+                                <div class="title-detail">Safety Stock <i
+                                        class="fal fa-info-circle tx-primary" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="The amount of items you have in your warehouse"></i>
+                                </div>
+                                <div class="tx-primary">
+                                    <div class="dropdown stock-dropdown">
+                                        <div class="d-flex align-items-center" data-toggle="dropdown"
+                                             aria-haspopup="true" aria-expanded="false">
+                                                        <span class="tx-13 stock-ipnput action-edit">
+                                                            10
+                                                        </span>
+                                        </div>
+                                        <div class="dropdown-menu tx-12 dropdown-form bg-white">
+                                            <form class="pd-10 form-update update-stock"
+                                                  data-parsley-validate
+                                                  onsubmit="return updateStockProduct(event, this)">
+                                                <p class="tx-18 tx-nomarl">
+                                                    Update stock
+                                                </p>
+                                                <input type="hidden" name="id" value="244970">
+                                                <div class="form-group mg-b-5 row row-xs">
+                                                    <div class="col-sm-5 col-form-label">Main warehouse
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        <input
+                                                                class="form-control tx-12 mg-l-auto wd-xs-100p"
+                                                                name="stock" value="10" placeholder=""
+                                                                data-parsley-type="number" min="0"
+                                                                data-parsley-trigger="keyup"
+                                                                data-parsley-required
+                                                                data-parsley-physicalstock="0"
+                                                                data-parsley-physicalstock-message="Physical stock needs to be greater than the total stock of processing for orders and reserves"
+                                                                data-parsley-required-message="The stock must be at least 0."
+                                                                data-parsley-min-message="The stock must be at least 0."
+                                                                onkeyup="keyUpFmtNumber(this)">
+                                                        <small
+                                                                class="body-fmtnumber tx-12 mg-y-5 mg-x-10 tx-gray-700"></small>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="text-left tx-13">
+                                                    <p class="d-flex">
+                                                        <span class="tx-medium">Total Stock:</span>
+                                                                    <span class="mg-l-auto tx-normal">
+                                                                        10
+                                                                    </span>
+                                                    </p>
+                                                    <div id="stock_history_p_244970"></div>
+                                                                <span
+                                                                        class="text-primary d-block text-right mg-b-10 d-none"><i
+                                                                        class="fal fa-history"></i> <a
+                                                                        href="../assets/detail/244970/stock-history">Stock
+                                                                    history</a></span>
+                                                </div>
+                                                <div class="text-right">
+                                                    <button type="reset"
+                                                            class="btn btn-outline-dark btn-action"
+                                                            onclick="$(this).closest('.dropdown').find('div[data-toggle=dropdown]').dropdown('toggle')">Cancel</button>
+                                                    <button type="submit"
+                                                            class="btn btn-primary mg-l-10 btn-action">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="title-detail">Campaign Stock <i
+                                        class="fal fa-info-circle tx-primary" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="The amount of items you have in your warehouse"></i>
+                                </div>
+                                <span class="tx-normal tx-13">0</span>
+                            </div>
+                            <div class="mg-sm-r-20">
+                                <div class="title-detail">Stock Sync <i
+                                        class="fal fa-info-circle tx-primary" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="The amount of items you have in your warehouse"></i>
+                                </div>
+                                <form class="form-status wd-70">
+                                    <div class="custom-control custom-switch" data-toggle="tooltip"
+                                         data-placement="top"
+                                         title="Platform does not support turning on/ off the status of variants product.">
+                                        <input type="checkbox" class="custom-control-input"
+                                               id="status-c57a5333-7b59-4d59-b873-3084b5dbe0e4" checked
+                                               onchange="toggleStatus(this)" disabled>
+
+                                        <label class="custom-control-label cursor-pointer"
+                                               for="status-c57a5333-7b59-4d59-b873-3084b5dbe0e4"></label>
+                                        <input type="hidden" name="route"
+                                               value="../assets/update-status">
+                                        <input type="hidden" name="shop_id" value="2036">
+                                        <input type="hidden" name="variant_id"
+                                               value="c57a5333-7b59-4d59-b873-3084b5dbe0e4">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav nav-line mg-t-20" style="border-bottom: 1px solid transparent;" id="nav3">
+                    <li class="nav-item">
+                        <a class="nav-link tx-14 text-capitalize"
+                           href="inventory-detail.html">Linked SKUs (1)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tx-14 text-capitalize " id="historyChange-tab"
+                           href="inventory-detail-order-processing.html">Orders pending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tx-14 text-capitalize active" id="historyChange-tab"
+                           href="inventory-detail-order.html">Orders delivered</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tx-14 text-capitalize " id="historyChange-tab"
+                           href="inventory-detail-history.html">Activity history</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tx-14 text-capitalize " id="historyChange-tab"
+                           href="inventory-detail-info.html">Information</a>
+                    </li>
+                </ul>
+
+                <div class="card" style="border-radius: 2px;">
+                    <div class="tab-content mg-t-20" id="myTabContent">
+                        <div class="pd-x-15">
+                            <h5>Orders delivered</h5>
+                            <p class="tx-gray-500 mg-b-10">We are supporting adding product listings on Shopee and
+                                Lazada. Please input your competitor&#039;s URL on the box bellow.</p>
+                            <div class="info-bg pd-x-15 pd-y-10 mg-b-15">Tồn kho hiện có ban đầu ảnh hưởng đến các đơn hàng xuất kho là: <span class="tx-bold">20, được set vào ngày {datetime}</span></div>
+                        </div>
+                        <div class="table-responsive wrap-pws-table" style="border-left: none; border-right: none;">
+                            <table id="" class="table table-inventory">
+                                <thead>
+                                <th scope="col" class="w-30 sorting_asc"
+                                    style="width: 50%">
+                                    <a class="ceil tx-01 white-space-nowrap " href="#" style="color: #575962!important;">
+                                        <span>Order Information</span>
+                                    <span class="sorting ">
+                                        <i class="fal fa-angle-up sort-caret ascending"></i>
+                                        <i class="fal fa-angle-down sort-caret descending"></i>
+                                    </span>
+                                    </a>
+                                </th>
+                                <th scope="col" class="w-30 sorting_asc"
+                                    style="width: 10%"
+                                    data-toggle="tooltip" title=""
+                                    data-original-title="The amount of items you have in your warehouse">
+                                    <a class="ceil tx-01 white-space-nowrap justify-content-end" href="#"
+                                       style="color: #575962!important;">
+                                        <span>Qty</span>
+                                    <span class="sorting ">
+                                        <i class="fal fa-angle-up sort-caret ascending"></i>
+                                        <i class="fal fa-angle-down sort-caret descending"></i>
+                                    </span>
+                                    </a>
+                                </th>
+                                <th scope="col" class="w-30 sorting_asc"
+                                    style="width: 20%"
+                                    data-toggle="tooltip" title=""
+                                    data-original-title="The amount of items you have in your warehouse">
+                                    <a class="ceil tx-01 white-space-nowrap justify-content-end" href="#"
+                                       style="color: #575962!important;">
+                                        <span>Created at</span>
+                                    <span class="sorting ">
+                                        <i class="fal fa-angle-up sort-caret ascending"></i>
+                                        <i class="fal fa-angle-down sort-caret descending"></i>
+                                    </span>
+                                    </a>
+                                </th>
+                                <th class="text-right">Status</th>
+                                </thead>
+                                <tbody>
+                                <tr id="" class="js-bg-row">
+                                    <td class="">
+                                        <div class="info">
+                                            <div class="d-flex pos-relative">
+                                                <div class="">
+                                                    <div class="__name-product-table mg-b-3" data-truncate="">
+                                                        <a id="listing-name" href="order-detail.html" class=" tx-primary d-block">
+                                                            257604852793050
+                                                        </a>
+                                                    </div>
+                                                    <div class="w-100 mg-b-5">
+                                                    <span class="mr-1 __smarttag __smarttag-danger"
+                                                          data-toggle="tooltip" data-placement="top" title=""
+                                                          data-original-title="The product is in the top 20% highest sales in the last 30 days">
+                                                        Không bán được
+                                                    </span>
+                                                    <span class="mr-1 __smarttag __smarttag-good"
+                                                          data-toggle="tooltip" data-placement="top" title=""
+                                                          data-original-title="The product is in the top 20% highest sales in the last 30 days">
+                                                        Best-selling
+                                                        </span>
+                                                    </div>
+                                                    <div class="sku tx-11 tx-normal d-flex">
+                                                        <a href="https://www.lazada.vn/-i245711482-s315224655.html" target="_blank"
+                                                           class="__sku-product-table">
+                                                        <span class="d-flex align-items-center ">
+                                                            <img src="../assets/images/platform/lazada.svg"
+                                                                 alt="lazada.vn" title="lazada.vn" width="15"
+                                                                 class="mg-r-5">
+                                                            <span class="__shopname-product-table" data-toggle="tooltip"
+                                                                  data-placement="top" title=""
+                                                                  data-original-title="LAZADA-11">
+                                                            LANHA1
+                                                            </span>
+                                                        </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="__number-top-table">
+                                            0
+                                        </span>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="__number-top-table">22/09/2020</div>
+                                        <div class="tx-light __number-bottom-table">01:50:00</div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="text-right">
+                                            <div class="d-flex align-items-center justify-content-end">
+                                                            <span class="__number-top-table" title="" data-original-title="">
+                                                                <div></div>
+                                                                <div class="__tx-organge d-flex align-items-center" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cannot get data. We will retry in the next hour.">
+                                                                    <div class="_cs-pending"></div>
+                                                                    <span>Pending</span>
+                                                                </div>
+
+                                                            </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr id="" class="js-bg-row">
+                                    <td class="">
+                                        <div class="info">
+                                            <div class="d-flex pos-relative">
+                                                <div class="">
+                                                    <div class="__name-product-table mg-b-3" data-truncate="">
+                                                        <a id="listing-name" href="order-detail.html" class="tx-primary d-block">
+                                                            257604852793050
+                                                        </a>
+                                                    </div>
+                                                    <div class="w-100 mg-b-5">
+                                                    <span class="mr-1 __smarttag __smarttag-danger"
+                                                          data-toggle="tooltip" data-placement="top" title=""
+                                                          data-original-title="The product is in the top 20% highest sales in the last 30 days">
+                                                        Không bán được
+                                                    </span>
+                                                    <span class="mr-1 __smarttag __smarttag-good"
+                                                          data-toggle="tooltip" data-placement="top" title=""
+                                                          data-original-title="The product is in the top 20% highest sales in the last 30 days">
+                                                        Best-selling
+                                                        </span>
+                                                    </div>
+                                                    <div class="sku tx-11 tx-normal d-flex">
+                                                        <a href="https://www.lazada.vn/-i245711482-s315224655.html" target="_blank"
+                                                           class="__sku-product-table">
+                                                        <span class="d-flex align-items-center ">
+                                                            <img src="../assets/images/platform/lazada.svg"
+                                                                 alt="lazada.vn" title="lazada.vn" width="15"
+                                                                 class="mg-r-5">
+                                                            <span class="__shopname-product-table" data-toggle="tooltip"
+                                                                  data-placement="top" title=""
+                                                                  data-original-title="LAZADA-11">
+                                                            LANHA1
+                                                            </span>
+                                                        </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="__number-top-table">
+                                            0
+                                        </span>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="__number-top-table">22/09/2020</div>
+                                        <div class="tx-light __number-bottom-table">01:50:00</div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="text-right">
+                                            <div class="d-flex align-items-center justify-content-end">
+                                                            <span class="__number-top-table" title="" data-original-title="">
+                                                                <div></div>
+                                                                <div class="__tx-organge d-flex align-items-center" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cannot get data. We will retry in the next hour.">
+                                                                    <div class="_cs-pending"></div>
+                                                                    <span>Pending</span>
+                                                                </div>
+
+                                                            </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr id="" class="js-bg-row">
+                                    <td class="">
+                                        <div class="info">
+                                            <div class="d-flex pos-relative">
+                                                <div class="">
+                                                    <div class="__name-product-table mg-b-3" data-truncate="">
+                                                        <a id="listing-name" href="order-detail.html" class="tx-primary d-block">
+                                                            257604852793050
+                                                        </a>
+                                                    </div>
+                                                    <div class="w-100 mg-b-5">
+                                                    <span class="mr-1 __smarttag __smarttag-danger"
+                                                          data-toggle="tooltip" data-placement="top" title=""
+                                                          data-original-title="The product is in the top 20% highest sales in the last 30 days">
+                                                        Không bán được
+                                                    </span>
+                                                    <span class="mr-1 __smarttag __smarttag-good"
+                                                          data-toggle="tooltip" data-placement="top" title=""
+                                                          data-original-title="The product is in the top 20% highest sales in the last 30 days">
+                                                        Best-selling
+                                                        </span>
+                                                    </div>
+                                                    <div class="sku tx-11 tx-normal d-flex">
+                                                        <a href="https://www.lazada.vn/-i245711482-s315224655.html" target="_blank"
+                                                           class="__sku-product-table">
+                                                        <span class="d-flex align-items-center ">
+                                                            <img src="../assets/images/platform/lazada.svg"
+                                                                 alt="lazada.vn" title="lazada.vn" width="15"
+                                                                 class="mg-r-5">
+                                                            <span class="__shopname-product-table" data-toggle="tooltip"
+                                                                  data-placement="top" title=""
+                                                                  data-original-title="LAZADA-11">
+                                                            LANHA1
+                                                            </span>
+                                                        </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="__number-top-table">
+                                            0
+                                        </span>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="__number-top-table">22/09/2020</div>
+                                        <div class="tx-light __number-bottom-table">01:50:00</div>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="text-right">
+                                            <div class="d-flex align-items-center justify-content-end">
+                                                            <span class="__number-top-table" title="" data-original-title="">
+                                                                <div></div>
+                                                                <div class="tx-success d-flex align-items-center" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cannot get data. We will retry in the next hour.">
+                                                                    <div class="_cs-success"></div>
+                                                                    <span>Shipped</span>
+                                                                </div>
+
+                                                            </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pagination -->
+                <div data-pjax="">
+                    <div class="pws-pagination d-flex flex-column flex-lg-row flex-md-row flex-sm-row mg-t-10 mg-b-10 align-items-center">
+                        <div class="d-flex justify-content-center mg-b-10">
+                            <div class="form-inline d-sm-flex d-none">
+                                <label for="pagination-limit" class="mr-2">Show</label>
+                                <div class="dropdown">
+                                    <button class="btn bd-gray-900 tx-gray-900 align-self-start mg-lg-l-10 mg-sm-l-0 bg-white border-secondary"
+                                            type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false" style="white-space:nowrap;">
+                                        30
+                                        &nbsp;<i class="far fa-angle-down"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item d-flex align-items-center  active " href="#">
+                                            <span class="tx-normal mg-l-5">30</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center " href="#">
+                                            <span class="tx-normal mg-l-5">50</span>
+                                        </a>
+                                        <a class="dropdown-item d-flex align-items-center " href="#">
+                                            <span class="tx-normal mg-l-5">100</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <label for="pagination-limit" class="ml-2">In total of <b>&nbsp; 179 &nbsp;</b> line</label>
+                            </div>
+                        </div>
+                        <ul class="pagination justify-content-center align-items-center mg-sm-l-auto pagination-space d-lg-flex d-md-flex d-sm-flex mg-b-10"
+                            role="navigation">
+                            <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+                                <span class="page-link page-link-arrow" aria-hidden="true">‹</span>
+                            </li>
+                            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item">
+                                <a class="page-link page-link-arrow" href="#" rel="next" aria-label="Next »">›</a>
+                            </li>
+                        </ul>
+                        <div class="justify-content-center mg-b-10 d-sm-flex d-none">
+                            <div class="form-inline">
+                                <label for="pagination-limit" class="mr-2">Go to page</label>
+                                <form>
+                                    <input type="number" name="page" min="0" max="6" value="1" placeholder="Page#"
+                                           class="form-control">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="modal fade" id="modalUpgrade" tabindex="-1" role="dialog" aria-labelledby="modalUpgradeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <img class="pos-absolute b-10 r-10"
+                    src="../assets/vendor/root/images/rocket_upgrade.svg" alt="" srcset="">
+                <div class="modal-header bd-0 pd-b-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pd-x-25 pd-t-0">
+                    <h5 class="tx-primary tx-sold">Upgrade to BUSINESS package to access advanced features:</h5>
+                    <p class="tx-normal mg-b-0">- Sync stock across multiple stores</p>
+                    <p class="tx-normal mg-b-0">- Bulk pricing and stock update</p>
+                    <p class="tx-normal mg-b-0">- Print all shipping labels and process orders at once</p>
+                    <p class="tx-normal mg-b-0">- Manage and control your returned orders</p>
+                    <p class="tx-normal mg-b-0">- Enable multiple staffs with permission control</p>
+                    <p class="tx-normal mg-b-0">- Access to advanced revenue trend and movement analysis</p>
+
+                    <h5 class="tx-primary tx-sold mg-t-15">Also increase the growth limits to new level</h5>
+                    <p class="tx-normal mg-b-0">- 5 stores</p>
+                    <p class="tx-normal mg-b-0">- 3000 product listings</p>
+                    <p class="tx-normal mg-b-0">- 5000 orders per month</p>
+                    <p class="tx-normal mg-b-0">- 500 hero images decorated</p>
+                </div>
+                <div class="modal-footer bd-0 pd-t-0 pd-x-25 pd-b-25">
+                    <a class=" mr-auto" href="https://dev.powersell.net/bundle/bundle-detail/204"><button type="button"
+                            class="btn btn-primary"><i data-feather="arrow-up-circle" class="mg-r-5"></i><span>Upgrade
+                                now</span></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalNotAllowed" tabindex="-1" role="dialog" aria-labelledby="modalNotAllowedLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">You just discovered an advanced feature!</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="closeNotAllowed">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please upgrade your account to use this feature and get the most out of PowerSell!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btnNotAllowedRemind">Remind
+                        me later</button>
+                    <a href="https://dev.powersell.net/application" class=""><button type="button"
+                            class="btn btn-primary">Upgrade</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLimitReached" tabindex="-1" role="dialog" aria-labelledby="modalLimitReachedLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title">Quota limit reached</h6>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>You have reached the quota limit allocated to your account. For more information about the quota
+                        limit, <a href="https://powersell.com/en/quota-limit-reached-what-does-it-mean"
+                            target="_blank">click here</a>.</p>
+                    <p>To continue driving your performance through PowerSell, please upgrade your account or purchase
+                        more quota.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Remind me later</button>
+                    <a href="https://dev.powersell.net/application" class=""><button type="button"
+                            class="btn btn-primary">Upgrade</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

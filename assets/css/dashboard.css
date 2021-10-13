@@ -1,0 +1,234 @@
+
+.__tx-17 {
+    font-size: 17px;
+}
+.popover {
+    /* max-width: initial!important; */
+    max-width: 350px!important;
+}
+.percent-change-bottom {
+    display: none;
+}
+
+._row-guidelines {
+    display: flex;
+    border-bottom: 1px solid #D9DFEA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+._row-guidelines:last-child {
+    border-bottom: none;
+}
+p, small{
+    margin-bottom: 0;
+}
+.__title {
+    color: #213C68;
+    font-size: 14px;
+    font-weight: 400;
+}
+.__text {
+    color: #8392A5;
+    font-size: 12px;
+    font-weight: 400;
+}
+._align-self {
+    align-self: center;
+}
+.wrap-pws-table{
+    box-shadow: none;
+    padding:0;
+}
+.wrap-pws-table .table th {
+    font-size: 13px;
+    font-weight: 600!important;
+    color: #213C68!important;
+    padding: 15px 20px;
+}
+.wrap-pws-table .table tr td {
+    padding: 10px 20px!important;
+}
+.__name-shop-table {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+.__pname-shop-table {
+    font-size: 11px;
+    font-weight: 400;
+    color: #8392A5;
+}
+.__name-product-table {
+    font-size: 13px;
+    font-weight: 400;
+    color: #001C44;
+}
+.__shopname-product-table {
+    font-size: 12px;
+    color: #8392A5;
+    font-weight: 400;
+}
+.__sku-product-table {
+    font-size: 11px;
+    color: #8392A5;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.__cs-status {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin-right: 5px;
+}
+.__cs-status-success {
+    color: #1AC55D;
+    background: #E0FFDD;
+}
+.__cs-status-danger {
+    color: #F46061;
+    background: #FDDEDE;
+}
+.__cs-status-gray {
+    color: #8392A5;
+    background: #E0E3EB;
+}
+.__cs-status-organge {
+    color:#FFA26B;
+    background:#FFE8DA;
+}
+.__tx-success {
+    font-size: 11px;
+    color: #1AC55D;
+}
+.__tx-danger{
+    color: #F46061;
+}
+.__tx-gray{
+    color: #8392A5;
+}
+.__img-shop-table {
+    height: 30px;
+    width: 30px;
+}
+.__img-product-table {
+    height: 65px;
+    width: 65px;
+}
+.__revenue-number-up {
+    font-size: 12px;
+    color: #12AE4F;
+    font-weight: 400;
+}
+.__revenue-number-down {
+    font-size: 12px;
+    color: #F46061;
+    font-weight: 400;
+}
+.__smarttag {
+    min-width: 5.5rem;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+.__smarttag-success {
+    color: #00ab4b;
+    background-color: rgba(26, 197, 93, 0.1);
+    border: 1px solid #1AC55D;
+}
+.__smarttag-good {
+    color:#005EF9;
+    background-color: #CAE7FF;
+    border: 1px solid #A3C5FF;
+}
+.__smarttag-danger {
+    color: #F46061;
+    background-color: #FEEEEE;
+    border: 1px solid #FDDEDE;
+}
+.__smarttag-gray {
+    color:#005EF9;
+    background-color: #CAE7FF;
+    border: 1px solid #A3C5FF;
+}
+.__smarttag-wh-number {
+    color:#505050;
+    background-color: #dddddd;
+    border: 1px solid #aaaaaa;
+}
+@media (max-width: 1280px) {
+    .percent-change-bottom {
+        display: initial;
+    }
+
+    .percent-change-left {
+        display: none;
+    }
+}
+
+.fa-stack {
+    text-align: center;
+}
+
+.fa-stack .fa-angle-down {
+    position: absolute;
+    bottom: 0;
+}
+
+.fa-stack .fa-angle-up {
+    position: absolute;
+    top: 0;
+}
+
+.dashboard-shadow {
+    /* box-shadow: 0 4px 10px rgba(0,0,0,.05); */
+    border-radius: 2px;
+}
+.tab-head-overview .btn-default {
+    background-color: #fff;
+    border-color: #c0ccda;
+    color: rgba(27, 46, 75, 0.7);
+}
+.tab-head-overview .active{
+    color: #fff!important;
+    background-color: #005EF9 !important;
+    border-color: #005EF9 !important;
+}
+.tab-head-overview .btn-default:hover, .btn-white:focus {
+    border-color: #8392a5;
+    color: #1b2e4b;
+}
+._cs-btn {
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px!important;
+}
+._cs-bd-none:last-child {
+    border-bottom:none;
+}
+._min-ht-50 {
+    min-height: 50px;
+}
+._rounded-2 {
+    border-radius: 2px!important;
+}
+.smarttag-primary, .smarttag-danger, .smarttag-success{
+    font-size: 11px!important;
+    padding: 3px 10px!important;
+}
+.__pd-y-23 {
+    Padding: 23px 20px !important;
+}
+
+.__min-ht-95 {
+    min-height: 95px;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+color: #fff;
+background-color: #005EF9 !important;
+border-color: #005EF9 !important;
+}
