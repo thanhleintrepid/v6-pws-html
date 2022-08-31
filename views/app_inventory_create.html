@@ -115,7 +115,7 @@
 <aside class="aside aside-fixed">
     <div class="aside-header">
         <a href="/" class="aside-logo">
-            <img src="../assets/vendor/root/images/logos/pws_full.svg" alt="PowerSell"
+            <img src="../assets/vendor/root/images/logos/pws_full.png" alt="PowerSell"
                  width="125">
         </a>
         <a href="" class="aside-menu-link">
@@ -271,7 +271,7 @@
                     </div>
                 </div>
                 <div>
-                    <a href="javascript:void(0)"><span onclick="showWidgetInterCorm()" data-toggle="tooltip"
+                    <a href="core-components.html"><span onclick="showWidgetInterCorm()" data-toggle="tooltip"
                                                        data-placement="top" title="Chat with us"><img
                             src="../assets/vendor/root/images/icons/chat.svg"
                             alt=""></span></a>
@@ -287,11 +287,11 @@
         <!-- Header -->
         <div class="content-header" style="height: 48px;">
         <div class="pws-title-page">
-            Title Page
+             
         </div>
             <nav class="nav align-items-center">
                 <li id="quota_resources" class="nav-item pd-r-25 d-none d-sm-block" style="white-space:nowrap;">
-                    <div class="btn btn-xs btn-danger h33px">
+                    <div class="btn btn-xs btn-pink h32px">
                         <i class="far fa-arrow-circle-up tx-16"></i>
                         <span class="tx-medium pd-l-5">UPGRADE</span>
                     </div>
@@ -339,7 +339,7 @@
                             class="tx-medium pd-l-5 mobile-hide"></span>
                     </a>
                         <span id="badge" class="badge"
-                            style="position: absolute; top: 10px; font-size: 8px; margin-left: 10px">
+                            style="position: absolute; top: 8px; font-size: 8px; margin-left: 8px">
                         </span>
                     <div class="dropdown-menu tx-14 pd-20 tx-medium _t-16 dropdown-menu-mobile-customize"
                         onclick="stopPropagationMenu(event)">
@@ -367,7 +367,7 @@
                         <!--show Upgrade tren mobile-->
                         <a href="#modalUpgrade" class="dropdown-item d-block d-sm-none" data-toggle="modal"
                         data-target="#modalAboutPWS">
-                            <div class="btn btn-xs btn-danger h33px">
+                            <div class="btn btn-xs btn-pink h32px">
                                 <i class="far fa-arrow-circle-up tx-16"></i>
                                 <span class="tx-medium pd-l-5">UPGRADE</span>
                             </div>
@@ -404,7 +404,7 @@
                         <li class="breadcrumb-item _bc-item" aria-current="page">New Inventory SKU
                             <a class="pointer-event" data-toggle="collapse" href="#info" role="button"
                                aria-expanded="false">
-                                <i class="fal fa-info-circle tx-primary mg-l-5"></i>
+                                <i data-feather="info" class="ht-xl-20 tx-primary"></i>
                             </a>
                         </li>
                     </ol>
@@ -477,7 +477,7 @@
                                                         SKU
                                                     </label>
                                                     <div class="col-sm-6">
-                                                        <div class="tx-11 tx-right" style="position: absolute; right: 15px; top: -20px;">
+                                                        <div class="tx-11 tx-right" style="position: absolute; right: 16px; top: -20px;">
                                                             <a href="javascript:void(0)" class="pull-right" onclick="generateSku()">Auto generate</a>
                                                         </div>
                                                         <div class="input-group">
@@ -498,7 +498,7 @@
                                                         Barcode
                                                     </label>
                                                     <div class="col-sm-6">
-                                                        <div class="tx-11 tx-right" style="position: absolute; right: 15px; top: -20px;">
+                                                        <div class="tx-11 tx-right" style="position: absolute; right: 16px; top: -20px;">
                                                             <a href="javascript:void(0)" class="pull-right" onclick="generateSku()">Auto generate</a>
                                                         </div>
                                                         <div class="input-group">
@@ -515,20 +515,23 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3 hint">
-                                        <p id="hint"></p>
+                                        <p id="hint" class="margin-top-remove-10px"></p>
                                     </div>
                                     <script>
                                         /*When you click the field*/
                                         $('#product_name').on('click', function () {
                                             /*Show this text in a div with an ID*/
-                                            $('#hint').html('Tên sản phẩm phải đồng nhất về Thương hiệu, Dòng sản phẩm, Tính năng nổi bật và Màu (nếu có). Màu của sản phẩm đặt trong dấu ngoặc đơn, nằm ở cuối tên. Tên sản phẩm được viết hoa và không chứa các ký tự đặc biệt (# ! ?)');
+                                            $('#hint').html('Tên sản phẩm phải đồng nhất về Thương hiệu, Dòng sản phẩm, Tính năng nổi bật và Màu (nếu có). Màu của sản phẩm đặt trong dấu ngoặc đơn, nằm ở cuối tên. Tên sản phẩm được viết hoa và không chứa các ký tự đặc biệt (# ! ?)').removeClass('margin-top-xlarge').addClass('margin-top-remove-10px');
+                                            $('#hint1').html('');
                                         })
-                                        /*When you click the image*/
+                                         
                                         $('#sku').on('click', function () {
-                                            $('#hint').html('text here');
+                                            $('#hint').html('Hãy nhập vào SKU hoặc click generate để tạo ra 1 SKU').addClass('margin-top-xlarge').removeClass('margin-top-remove-10px');
+                                            $('#hint1').html('');
                                         })
                                         $('#barcode').on('click', function () {
-                                            $('#hint').html('text here here');
+                                            $('#hint').html('Hãy nhập vào Barcode hoặc click generate để tạo ra 1 Barcode').addClass('margin-top-xlarge').removeClass('margin-top-remove-10px');
+                                            $('#hint1').html('');
                                         })
                                     </script>
                                 </div>
@@ -545,7 +548,7 @@
                                                 Hình ảnh
                                             </label>
                                             <div class="col-sm-9">
-                                                <div class="box-container-img">
+                                                <div class="box-container-img" id="image">
                                                     <div class="pws-added-image">
                                                         <img src="../assets/images/article2.png" class="mg-r-20 img-add">
                                                         <div class="pws-image-action">
@@ -589,7 +592,7 @@
                                                     </label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                                                            <input id="avgprice" type="text" class="form-control" aria-describedby="basic-addon2">
                                                             <div class="input-group-append">
                                                                 <span class="input-group-text" id="basic-addon2">đ</span>
                                                             </div>
@@ -604,7 +607,7 @@
                                                     </label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                                                            <input id="sellprice" type="text" class="form-control" aria-describedby="basic-addon2">
                                                             <div class="input-group-append">
                                                                 <span class="input-group-text" id="basic-addon2">đ</span>
                                                             </div>
@@ -621,7 +624,7 @@
                                                     </label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="EX. 100">
+                                                            <input id="stock" type="text" class="form-control" aria-describedby="basic-addon2" placeholder="EX. 100">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -633,7 +636,7 @@
                                                     </label>
                                                     <div class="col-sm-6">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" aria-describedby="basic-addon2" placeholder="EX. Best Seller">
+                                                            <input id="tag" type="text" class="form-control" aria-describedby="basic-addon2" placeholder="EX. Best Seller">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -641,9 +644,32 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-3 hint">
-                                        <p>Đinh dạng hình ảnh cho phép JPG JPEG, PNG, kích thước tối thiểu 300x300,
-                                            dung lượng tối đa 1M và số lượng tối đa 8 hình ảnh</p>
+                                        <p id="hint1"></p>
                                     </div>
+                                    <script>
+                                        /*When you click the field*/
+                                        $('#image').on('click', function () {
+                                            /*Show this text in a div with an ID*/
+                                            $('#hint1').html('Đinh dạng hình ảnh cho phép JPG JPEG, PNG, kích thước tối thiểu 300x300, dung lượng tối đa 1M và số lượng tối đa 8 hình ảnh').removeClass('margin-top-114px margin-top-165px');
+                                            $('#hint').html('');
+                                        }) 
+                                        $('#avgprice').on('click', function () {
+                                            $('#hint1').html('Giá trung bình nè').addClass('margin-top-114px').removeClass('margin-top-165px');
+                                            $('#hint').html('');
+                                        })
+                                        $('#sellprice').on('click', function () {
+                                            $('#hint1').html('Giá bán nè').addClass('margin-top-114px').removeClass('margin-top-165px');
+                                            $('#hint').html('');
+                                        })
+                                        $('#stock').on('click', function () {
+                                            $('#hint1').html('Tồn kho nè').addClass('margin-top-165px').removeClass('margin-top-114px');
+                                            $('#hint').html('');
+                                        })
+                                        $('#tag').on('click', function () {
+                                            $('#hint1').html('Các thẻ nè').addClass('margin-top-165px').removeClass('margin-top-114px');
+                                            $('#hint').html('');
+                                        })
+                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -829,7 +855,7 @@
     $(".js-bg-row").hover(function () {
                 $(this).find('.action-dropdown').attr('src', '../assets/images/action-dropdown-hover.svg');
                 $(this).find('.img-link').attr('src', '../assets/images/link-hover.svg');
-                $(this).css('background-color', '#ECF3FF');
+                $(this).css('background-color', 'var(--secondary-bgr)');
             },
             function () {
                 $(this).find('.action-dropdown').attr('src', '../assets/images/action-dropdown.svg');
